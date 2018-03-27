@@ -56,7 +56,9 @@ body {
     font-size: 5em;
     margin-bottom: 0.1em;
 }
-.intro-message > h3, h4, h5 {
+.intro-message > h3,
+.intro-message > h4,
+.intro-message > h5 {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 
@@ -72,6 +74,49 @@ body {
 #instafeed img:hover {
     opacity:1;
     filter:alpha(opacity=100);
+}
+.card > a {
+    position: absolute;
+    z-index: 2;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+}
+
+.web-thumbnail-container {
+    background-image: url('../img/loader.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.web-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    -ms-zoom: 0.4;
+    -moz-transform: scale(0.4);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.4);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.4);
+    -webkit-transform-origin: 0 0;
+}
+.web-thumbnail-container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.web-thumbnail iframe {
+    width: 250%;
+    height: 250%;
+    position: absolute;
+    transition: all 300ms ease-in-out;
 }
 .copyright {
     margin-top: 0.5em;
