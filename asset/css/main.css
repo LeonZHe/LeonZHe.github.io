@@ -86,7 +86,7 @@ body {
     background-image: url('../img/loader.gif');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 15px 15px;
+    background-size: 30px 30px;
     display: inline-block;
     overflow: hidden;
     position: relative;
