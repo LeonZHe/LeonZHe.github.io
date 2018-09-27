@@ -19,8 +19,8 @@ body {
 
 .intro-message {
     padding-top: 15%;
-    padding-left: 35%;
-    color: gold;
+    padding-left: auto;
+    /* color: gold; */
 }
 .bg-wrapper {
     position: relative;
@@ -36,17 +36,19 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.8;
-    background-image: url('../img/nicole.jpg');
+    opacity: 0.7;
+    -webkit-filter:brightness(0.5);
+    -webkit-filter:blur(3px);
+    background-image: url('../img/bg1.jpg');
     background-repeat: no-repeat;
     -ms-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-position: -350px -100px;
-    background-size: 130%;
+    /* background-position: -350px -100px; */
+    background-size: 100%;
 }
-.bg-wrapper > .intro-message {
+.bg-wrapper > .intro-message, #intro-social {
     position: relative;
     z-index:2;
 }
