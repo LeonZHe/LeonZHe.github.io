@@ -36,7 +36,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.7;
+    opacity: 0.6;
     -webkit-filter:brightness(0.5);
     -webkit-filter:blur(3px);
     background-image: url('../img/bg1.jpg');
@@ -77,48 +77,15 @@ body {
     opacity:1;
     filter:alpha(opacity=100);
 }
-.card > a {
+/* .card > a {
     position: absolute;
     z-index: 2;
     top: 0; left: 0;
     height: 100%; width: 100%;
-}
+} */
 
-.web-thumbnail-container {
-    background-image: url('../img/loader.gif');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-}
-.web-thumbnail {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    -ms-zoom: 0.4;
-    -moz-transform: scale(0.4);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.4);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.4);
-    -webkit-transform-origin: 0 0;
-}
-.web-thumbnail-container:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.web-thumbnail iframe {
-    width: 250%;
-    height: 250%;
-    position: absolute;
-    transition: all 300ms ease-in-out;
+#interest li > img {
+    width: 50%;
 }
 .copyright {
     margin-top: 0.5em;
