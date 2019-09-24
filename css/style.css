@@ -1053,9 +1053,9 @@ body.offcanvas {
 
 .colorlib-counters {
   padding: 3em 0;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
-  background-position: center center; }
+  background-position: 65% center; }
   .colorlib-counters .overlay {
     z-index: 0;
     position: absolute;
