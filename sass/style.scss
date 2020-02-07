@@ -127,6 +127,7 @@ body {
 }
 a {
 	color: $brand-primary;
+	font-weight: 410;
 	@include transition(.5s);
 	&:hover, &:active, &:focus {
 		color: $brand-primary;
@@ -218,6 +219,7 @@ figure {
 		display: block;
 		width: 100%;
 		a{
+			font-weight: 710;
 			display: block;
 			text-align: center;
 			color: $brand-black;
@@ -325,7 +327,7 @@ figure {
 				display: inline;
 				list-style: none;
 				a {
-					color: rgba(255,255,255,.3);
+					// color: rgba(255,255,255,.3);
 					padding: 4px;
 					&:hover, &:active, &:focus {
 						text-decoration: none;
